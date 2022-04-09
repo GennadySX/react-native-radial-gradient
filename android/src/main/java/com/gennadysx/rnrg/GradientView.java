@@ -1,4 +1,4 @@
-package com.surajit.rnrg;
+package com.gennadysx.rnrg;
 
 import android.content.Context;
 import android.graphics.Canvas;

@@ -1,4 +1,4 @@
-package com.surajit.rnrg;
+package com.gennadysx.rnrg;
 
 
 import com.facebook.react.bridge.ReadableArray;

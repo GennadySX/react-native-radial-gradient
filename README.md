@@ -3,11 +3,11 @@
 
 ## Getting started
 
-`$ npm install react-native-radial-gradient --save`
+`$ npm install @gennadysx/react-native-radial-gradient --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-radial-gradient`
+`$ react-native link @gennadysx/react-native-radial-gradient`
 
 ### Manual installation
 
@@ -15,7 +15,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-radial-gradient` and add `SRSRadialGradient.xcodeproj`
+2. Go to `node_modules` ➜ `@gennadysx/react-native-radial-gradient` and add `SRSRadialGradient.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libSRSRadialGradient.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)
 
@@ -26,12 +26,12 @@
   - Add `new RNRadialGradientPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-radial-gradient'
-  	project(':react-native-radial-gradient').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-radial-gradient/android')
+  	include ':@gennadysx/react-native-radial-gradient'
+  	project(':@gennadysx/react-native-radial-gradient').projectDir = new File(rootProject.projectDir, 	'../node_modules/@gennadysx/react-native-radial-gradient/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-radial-gradient')
+      compile project(':@gennadysx/react-native-radial-gradient')
   	```
 
 If you've defined *[project-wide properties](https://developer.android.com/studio/build/gradle-tips.html)* in your root `build.gradle`, this library will detect the presence of the following properties:
@@ -52,7 +52,7 @@ If you've defined *[project-wide properties](https://developer.android.com/studi
 
 ## Usage
 ```javascript
-import RadialGradient from 'react-native-radial-gradient';
+import RadialGradient from '@gennadysx/react-native-radial-gradient';
 
 // TODO: What to do with the module?
 <RadialGradient style={{width:200,height:200}}
@@ -93,4 +93,3 @@ An optional array of numbers defining the location of each gradient color stop.
 The relative position of each corresponding color is in the colors array.
 Valid values are between <code>0.0f</code> and <code>1.0f</code>.
 Example: [0.1, 0.75, 1] means that first color will take 0% - 10%, second color will take 10% - 75% and finally third color will occupy 75% - 100%. By default all color will be distributed evenly.
-  

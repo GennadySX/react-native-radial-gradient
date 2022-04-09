@@ -1,5 +1,5 @@
 
-package com.surajit.rnrg;
+package com.gennadysx.rnrg;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
